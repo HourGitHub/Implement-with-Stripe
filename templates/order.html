@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Order</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="text" class="form-control" id="contact" name="contact" required>
+    </div>
+    <div class="form-group">
+        <label for="card_info">Card Information</label>
+        <input type="text" class="form-control" id="card_info" name="card_info" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Place Order</button>
+</form>
+{% endblock %}
